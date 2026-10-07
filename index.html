@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat Psów 🐶</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8ef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b4513, #d2691e);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: #5c2f14;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd28a;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #8b4513;
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .dogs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .dog-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #a0522d;
+            margin-bottom: 10px;
+        }
+
+        .facts {
+            background: #ffe4c4;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .facts li {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #8b4513;
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ffd28a;
+            color: #5c2f14;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        footer {
+            background: #3b1d0b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐶 Świat Psów 🐾</h1>
+        <p>Wszystko, co warto wiedzieć o najlepszych przyjaciołach człowieka!</p>
+    </header>
+
+    <nav>
+        <a href="#o-psach">O psach</a>
+        <a href="#rasy">Rasy</a>
+        <a href="#ciekawostki">Ciekawostki</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="o-psach">
+        <h2>🐕 O psach</h2>
+
+        <p class="intro">
+            Psy to jedne z najpopularniejszych zwierząt domowych na świecie.
+            Są wierne, inteligentne i bardzo przywiązują się do swoich opiekunów.
+            Mogą być zarówno wspaniałymi towarzyszami, jak i psami pracującymi.
+        </p>
+    </section>
+
+    <section id="rasy">
+        <h2>🐕 Popularne rasy psów</h2>
+
+        <div class="dogs">
+
+            <div class="card">
+                <div class="dog-icon">🐕</div>
+                <h3>Labrador Retriever</h3>
+                <p>
+                    Przyjazny, inteligentny i energiczny pies.
+                    Labradory świetnie sprawdzają się jako psy rodzinne.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="dog-icon">🐕‍🦺</div>
+                <h3>Owczarek Niemiecki</h3>
+                <p>
+                    Odważny i bardzo inteligentny pies.
+                    Często pracuje w policji, ratownictwie i służbach.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="dog-icon">🦮</div>
+                <h3>Golden Retriever</h3>
+                <p>
+                    Łagodny, przyjazny i niezwykle towarzyski pies.
+                    Jest popularnym wyborem dla rodzin.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="dog-icon">🐩</div>
+                <h3>Pudel</h3>
+                <p>
+                    Bardzo inteligentna i aktywna rasa.
+                    Pudle występują w różnych rozmiarach.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ciekawostki">
+        <h2>🦴 Ciekawostki o psach</h2>
+
+        <div class="facts">
+            <ul>
+                <li>🐾 Psy mają znacznie lepszy węch niż ludzie.</li>
+                <li>❤️ Psy potrafią tworzyć bardzo silne więzi ze swoimi opiekunami.</li>
+                <li>👃 Nos psa jest wyjątkowo czuły na zapachy.</li>
+                <li>🎓 Psy można nauczyć wielu różnych komend i sztuczek.</li>
+                <li>🏃 Niektóre rasy potrzebują bardzo dużo codziennego ruchu.</li>
+                <li>😴 Dorosłe psy zazwyczaj śpią od około 12 do 14 godzin dziennie.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <div class="contact">
+            <h2>🐾 Kochasz psy?</h2>
+            <p>
+                Zostań częścią naszego psiego świata!
+                Dowiedz się więcej o rasach, opiece i ciekawostkach.
+            </p>
+
+            <a href="mailto:kontakt@example.com" class="button">
+                Napisz do nas
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Świat Psów 🐶 | Strona wykonana w HTML i CSS</p>
+    </footer>
+
+</body>
+</html>
